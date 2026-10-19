@@ -317,6 +317,84 @@ body {
     line-height: 1.8;
 }
 
+.places-article .essay-header {
+    margin-bottom: 2.5rem;
+}
+
+.place-entry {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 1rem;
+    min-height: 12rem;
+    padding: 1.5rem 0 2.5rem;
+}
+
+.place-number {
+    padding-top: 0.35rem;
+    color: var(--accent);
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+}
+
+.place-content h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+}
+
+.place-content p {
+    max-width: 700px;
+    margin: 1.25rem 0 0;
+    color: var(--text);
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.place-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.place-gallery figure {
+    margin: 0;
+}
+
+.place-gallery img {
+    display: block;
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+
+.place-gallery .trout-illustration {
+    object-fit: contain;
+    background: #e1e6dc;
+}
+
+.place-gallery .trail-map {
+    object-fit: contain;
+    background: #e1e6dc;
+}
+
+.san-diego-gallery .del-mar-photo {
+    object-position: center 70%;
+}
+
+.place-gallery figcaption {
+    margin-top: 0.55rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+
+.place-gallery a {
+    color: var(--accent);
+}
+
 .about-page {
     max-width: 900px;
     margin: 0 auto;
@@ -376,6 +454,10 @@ body {
 }
 
 @media (max-width: 600px) {
+    .place-gallery {
+        grid-template-columns: 1fr;
+    }
+
     .about-page {
         padding: 2rem 1.25rem 3rem;
     }
